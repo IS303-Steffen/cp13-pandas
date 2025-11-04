@@ -1,15 +1,4 @@
-import os
-import platform
-
-def clear_screen():
-    """
-    Clears the terminal screen to make it easier to follow along with code.
-    """
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-
+from helper_functions import clear_screen
 clear_screen()
 
 # ================
@@ -38,8 +27,7 @@ print(df_mock_data, '\n')
 # 1. APPLY STRING FUNCTIONS TO A COLUMN
 # Make the "last_name" column all uppercase. Use .str after getting a column
 # to treat it like a string. Then add the string methods, like str.upper()
-df_mock_data["last_name"] = df_mock_data["last_name"].str.upper()
-print(df_mock_data)
+
 
 
 '''
@@ -57,8 +45,7 @@ new dataframe
 # Use the split() method on the "gender" column. Split it using "a" as the
 # character you split by. Use expand=True so that it gives you a new DataFrame.
 # Print out the new DataFrame
-df_separated_columns = df_mock_data["gender"].str.split("a", expand=True)
-print(df_separated_columns)
+
 
 
 

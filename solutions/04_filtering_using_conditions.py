@@ -64,22 +64,24 @@ print(df_dancers, "\n")
 
 # 1. FILTER USING .query()
 # Show all columns, but only for those age 21 and older. Use .query
-
+print(df_dancers.query("Age > 21"), "\n")
 
 # 2. FILTER USING .query(), SHOW A SINGLE COLUMN
 # Show only 21 or older, but just show the Dancer column. Use .query.
 # Just use brackets after the query method to get the "Dancer" column.
-
+print(df_dancers.query("Age > 21")["Dancer"], '\n')
 
 # 3. FILTER USING .query() WITH MULTIPLE CONDITIONS
 # Show only 21 or older that have a dance Type of Jazz
-
+print(df_dancers.query("Age > 21 and Type == 'Jazz'"), '\n')
 
 # 4. CHANGE YOUR DATAFRAME WITH .query() BY USING inplace=True
 # Print out your DataFrame. Then run a query to only retain those with an age
 # over 21, but add the parameter inplace with True as the argument. Print out
 # your DataFrame again. What happened?
-
+print(df_dancers, '\n')
+df_dancers.query("Age > 21", inplace=True)
+print(df_dancers, '\n')
 
 '''
 DO I NEED TO USE inplace=True?
@@ -89,3 +91,4 @@ These 2 lines of code accomplish the same thing:
 df_dancers = df_dancers.query("Type == 'Modern'")
 df_dancers.query("Type == 'Modern'", inplace = True)
 '''
+

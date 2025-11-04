@@ -1,15 +1,4 @@
-import os
-import platform
-
-def clear_screen():
-    """
-    Clears the terminal screen to make it easier to follow along with code.
-    """
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-
+from helper_functions import clear_screen
 clear_screen()
 
 # =============================
@@ -90,7 +79,7 @@ print(dict_sheets)
 '''
 CAN I EXPORT MULTPLE DATAFRAMES TO ONE EXCEL WORKBOOK?
 ------------------------------------------------------
-If you want to export mulitple dataframes into one Excel file,
+If you want to export multiple dataframes into one Excel file,
 you need to pip install xlsxwriter and then make a ExcelWriter object
 with pandas. I won't cover that, but look it up if that sounds interesting.
 '''

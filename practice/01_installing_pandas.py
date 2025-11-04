@@ -1,15 +1,4 @@
-import os
-import platform
-
-def clear_screen():
-    """
-    Clears the terminal screen to make it easier to follow along with code.
-    """
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-
+from helper_functions import clear_screen
 clear_screen()
 
 # ============================
@@ -17,6 +6,7 @@ clear_screen()
 # ============================
 
 import pandas as pd
+import openpyxl
 
 '''
 FIRST:
@@ -30,9 +20,9 @@ HOW TO DOWNLOAD LIBRARIES:
     1. In VS Code, go to Terminal > New Terminal (at the top of the screen)
 
     2. Then in the bottom Terminal window, type:
-                pip install pandas
+                pip install pandas openpyxl
         and then hit the enter/return key. If that doesen't work, try:
-                pip3 install pandas
+                pip3 install pandas openpyxl
         then hit the enter/return key
     
     3. Then, try and run this python file again, if it prints out the message
@@ -64,4 +54,4 @@ IT STILL ISN'T WORKING FOR ME:
        and then select the version of python that says "Recommended" 
 '''
 
-print("If this prints, that means you installed pandas correctly")
+print("If this prints, that means you installed pandas & openpyxl correctly")

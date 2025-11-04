@@ -1,27 +1,16 @@
-import os
-import platform
-
-def clear_screen():
-    """
-    Clears the terminal screen to make it easier to follow along with code.
-    """
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-
+from helper_functions import clear_screen
 clear_screen()
 
 # ============================
 # INSTALLING PACKAGES WITH PIP
 # ============================
 
-import matplotlib.pyplot as plot
+import pandas as pd
 
 '''
 FIRST:
     Try running this code. You're probably going to get an error.
-    This is because matplotlib is a library that you need to download from the
+    This is because pandas is a library that you need to download from the
     internet.
 
 HOW TO DOWNLOAD LIBRARIES:
@@ -30,9 +19,9 @@ HOW TO DOWNLOAD LIBRARIES:
     1. In VS Code, go to Terminal > New Terminal (at the top of the screen)
 
     2. Then in the bottom Terminal window, type:
-                pip install matplotlib
+                pip install pandas
         and then hit the enter/return key. If that doesen't work, try:
-                pip3 install matplotlib
+                pip3 install pandas
         then hit the enter/return key
     
     3. Then, try and run this python file again, if it prints out the message
@@ -64,4 +53,4 @@ IT STILL ISN'T WORKING FOR ME:
        and then select the version of python that says "Recommended" 
 '''
 
-print("If this prints, that means you installed matplotlib correctly")
+print("If this prints, that means you installed pandas correctly")
