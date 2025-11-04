@@ -124,7 +124,7 @@ For example: [1, 3]
 '''
 .iloc vs .loc
 -------------
-Now we'll switch to using .iloc. The main difference it it uses the LABELS for
+Now we'll switch to using .loc. The main difference it it uses the LABELS for
 indexes and columns instead of integer index locations. 
 
 This can be confusing because by default, the index is named the same thing.
