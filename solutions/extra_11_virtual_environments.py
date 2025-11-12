@@ -10,7 +10,7 @@ OVERVIEW
 --------
 A virtual environment is like a clean, self-contained workspace for your Python
 project. It includes a full copy of the Python interpreter and its own place to
-install packages, so anything you add or change doesn’t affect other projects
+install packages, so anything you add or change doesn't affect other projects
 or your system-wide Python. This isolation is especially useful when different
 projects need different versions of the same package. It also makes your code
 easier to share and reproduce, since you can list exactly what dependencies it
@@ -34,11 +34,9 @@ conflict-free, and easier to manage.
    virtual environment
 '''
 
-import openpyxl
-wb = openpyxl.Workbook()
-wb.active["A1"] = "quick example"
-wb.save("extra_01.xlsx")
-wb.close()
+import pandas as pd
+df = pd.DataFrame({"Name": ["Jacob", "Sarah"]})
+print(df)
 
 '''
 MAKING VENV THROUGH THE COMMAND LINE
