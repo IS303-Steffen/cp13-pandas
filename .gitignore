@@ -3,3 +3,4 @@ altered_dancers.xlsx
 student_grades.xlsx
 __pycache__
 .DS_STORE
+.venv
